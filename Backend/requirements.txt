@@ -1,0 +1,19 @@
+langchain
+langchain-ollama
+langchain-core
+langdetect
+SpeechRecognition
+PyAudio
+pipwin
+gTTS
+# playsound often fails to build on Windows/Python 3.11+/3.12+. We use a playback fallback in tts.py
+# If you want a dedicated audio playback package, consider installing one of these manually:
+# pip install simpleaudio    # lightweight, wav-only
+# pip install pyglet         # mp3/wav playback (bigger)
+
+# Backend server dependencies for local API used by React frontend
+Flask
+flask-cors
+
+# Note: Some packages (PyAudio) are easiest to install on Windows via pipwin or prebuilt wheels.
+# Ollama itself is a separate system (not a pip package) — see README_RUN.md for details.
